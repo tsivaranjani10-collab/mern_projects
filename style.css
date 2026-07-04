@@ -1,0 +1,177 @@
+/*h1{
+    border:2px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+h2{
+    color:blueviolet;
+    background-color:fuchsia;
+
+}
+h3{
+    color:burlywood;
+    background-color:brown;
+}
+body{
+    background-color:chocolate;
+}
+p{
+    color:chartreuse;
+}
+
+.h4head{
+    color:darkorange;
+}
+
+#h5id{
+    background-color:greenyellow;
+}
+
+*{
+    background-color:darkmagenta;
+}
+
+.box{
+     width: 200px;
+     height: 100px;
+     background-color: blue;
+     color:beige;
+}
+.container1{
+    background-color: aquamarine;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+     gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    background-color:burlywood;
+    height: 400px;
+    display:flex;
+    flex-direction: row;
+     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.box2{
+     width: 100px;
+     height: 200px;
+     background-color: blue;
+     color:beige;
+}
+.layout{
+    background-color:aquamarine;
+    height: 1000px;
+    display:grid;
+    grid-template-columns:100px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+} */
+ /*.row{
+      background-color:brown;
+      border: 2px solid aqua;
+      color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ }
+ .layout{
+    height:700px;
+    background-color:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 150px 200px 150px 150px ;
+    grid-template-areas: 
+    "he he he"
+    "h h h"
+    "p1 p2 p3"
+    "c c c"
+    "f f f"
+    ;
+    gap:20px;
+ }
+ #header{
+    grid-area: he;
+ }
+ #hero{
+    grid-area: h;
+ }
+ #p1{
+    grid-area: p1;
+ }
+ #p2{
+    grid-area: p2;
+ }
+ #p3{
+    grid-area: p3;
+ }
+ #contact{
+    grid-area: c;
+ }
+ #footer{
+    grid-area: f;
+ }
+*/
+.static{
+    background-color: burlywood;
+    width:100px;
+    height: 100px;
+    position: static;
+ }
+.relative{
+    background-color:chocolate;
+    width:100px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+    top:50px;
+ }
+ .abparent{
+    position: relative;
+    border: 10px solid black;
+    width:100px;
+    height: 100px;
+ }
+ .absolute{
+    background-color:aqua;
+    width:100px;
+    height: 100px;
+    position: absolute;
+   top:50px;
+ }
+ .fixed{
+    background-color:blueviolet;
+    width:100px;
+    height: 100px;
+    position: fixed;
+ }
+ .sticky{
+    background-color:cadetblue;
+    width:100px;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    bottom: 10px;
+ }
+.notify{
+    background-color:black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+.count{
+    background-color: red;
+    color:aliceblue;
+    border-radius: 60px;
+    width: 10px;
+    position: absolute;
+    left:20px;
+}
+.notfixed{
+
+}

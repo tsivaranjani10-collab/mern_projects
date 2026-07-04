@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    font-size:40px;
+    text-shadow:2px 2px 5px black;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.image-box{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.image-box:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.image-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.caption{
+    padding:15px;
+    text-align:center;
+    font-size:18px;
+    color:#333;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:white;
+    font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>📸 Beautiful Photo Gallery</h1>
+
+<div class="gallery">
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1015/400/300" alt="Nature">
+<div class="caption">Nature</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1016/400/300" alt="Mountain">
+<div class="caption">Mountain</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1025/400/300" alt="Dog">
+<div class="caption">Cute Dog</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1035/400/300" alt="Beach">
+<div class="caption">Beach</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1040/400/300" alt="Forest">
+<div class="caption">Forest</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1050/400/300" alt="Flowers">
+<div class="caption">Flowers</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1060/400/300" alt="Bridge">
+<div class="caption">Bridge</div>
+</div>
+
+<div class="image-box">
+<img src="https://picsum.photos/id/1074/400/300" alt="Sunset">
+<div class="caption">Sunset</div>
+</div>
+
+</div>
+
+<footer>
+    © 2026 Photo Gallery | Designed with HTML & CSS
+</footer>
+
+</body>
+</html>
