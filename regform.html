@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="row">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="row">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="row">
+            <label>Gender</label>
+            <div>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+        </div>
+
+        <div class="row">
+            <label>Department</label>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Skills</label>
+            <div>
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JavaScript
+            </div>
+        </div>
+
+        <div class="row">
+            <label>Date of Birth</label>
+            <input type="date">
+        </div>
+
+        <div class="row">
+            <label>Address</label>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <h2>Registered Students</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Department</th>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>rahul@gmail.com</td>
+            <td>Male</td>
+            <td>CSE</td>
+        </tr>
+
+        <tr>
+            <td>Anjali</td>
+            <td>anjali@gmail.com</td>
+            <td>Female</td>
+            <td>EEE</td>
+        </tr>
+
+        <tr>
+            <td>Vijay</td>
+            <td>vijay@gmail.com</td>
+            <td>Male</td>
+            <td>ECE</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
