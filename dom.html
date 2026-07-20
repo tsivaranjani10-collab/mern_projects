@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="head">Hello guys!Good Morning!!!</h1>
+        <button id="changeText">Change text</button>
+        <h2 class="head2">Sivaranjani</h2>
+        <h2 class="head2">BE.EEE</h2>
+        <h2 class="head2">SKCET</h2>
+        <input type="text" id="input">
+        <button id="addbtn">ADD</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nam!</p>
+    </div>
+
+    <div id=""fruitList>
+        <input type="text" id="input" placeholder="Enter Fruits">
+        <button id="addbtn">ADD</button>
+        <button id=""showbtn>Show Data</button>
+    </div>
+    <ol id="list">
+
+    </ol>
+    <div id="showData"></div>
+
+    <script>
+        //id selector
+        let head=document.getElementById("head")
+        let button=document.getElementById("changeText")
+
+        button.addEventListener("click",function(){
+            head.innerText="Its Changed !!!"
+            head.style.color="red"
+        })
+
+        //class selector
+        let head2=document.getElementsByClassName("head2")
+            head2[2].style.color="blue"//changing the color array index position 2[2] as 3 h2 class present
+
+        //tag selector
+        let para=document.getElementsByTagName("p")
+            para[0].style.color="brown"//accessing by array index 0 as only one p tag present
+
+        //create element in the script and appending it with div through variable declaration newpara
+        let newPara=document.createElement("p")
+        newPara.innerText="this is newly added para"
+
+        let main=document.getElementById("main")
+        main.appendChild(newPara)
+        //console.log(newPara)
+    </script>
+</body>
+</html>
